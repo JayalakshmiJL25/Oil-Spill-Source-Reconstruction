@@ -150,7 +150,7 @@ def build_deck():
     contents_items = [
         "Dataset",
         "Proposed Model",
-        "Overall System Architecture Diagram",
+        "Overall System Architecture & Data Pipeline",
         "Preprocessing (Give information on Big Data Analysis and its steps)",
         "Results of Preprocessing (Insert graphs and table)",
         "Classification (Give information on your novel/proposed model/classifier)",
@@ -271,14 +271,14 @@ def build_deck():
             p_b.space_before = Pt(2)
 
     # =========================================================================
-    # SLIDE 5: OVERALL SYSTEM ARCHITECTURE DIAGRAM (Exact matching Sample Slide 5)
+    # SLIDE 5: OVERALL SYSTEM ARCHITECTURE & DATA PIPELINE (Exact matching user title)
     # =========================================================================
     s5 = prs.slides.add_slide(blank_layout)
-    add_slide_header(s5, "Overall System Architecture Diagram")
+    add_slide_header(s5, "Overall System Architecture & Data Pipeline")
 
     # High-resolution, vector-like, perfectly fitted diagram
     if os.path.exists(ARCH_IMG):
-        s5.shapes.add_picture(ARCH_IMG, Inches(0.8), Inches(1.3), width=Inches(11.73), height=Inches(5.6))
+        s5.shapes.add_picture(ARCH_IMG, Inches(0.8), Inches(1.3), width=Inches(11.73))
 
     # =========================================================================
     # SLIDE 6: PREPROCESSING (Exact matching Sample Slide 6)
@@ -781,8 +781,13 @@ def build_deck():
     pty.font.color.rgb = SRM_NAVY
     pty.alignment = PP_ALIGN.CENTER
 
-    prs.save(OUTPUT_PPTX)
-    print(f"[SUCCESS] Sample-matched presentation generated cleanly at: {OUTPUT_PPTX}")
+    try:
+        prs.save(OUTPUT_PPTX)
+        print(f"[SUCCESS] Sample-matched presentation generated cleanly at: {OUTPUT_PPTX}")
+    except PermissionError:
+        alt_path = os.path.join(BASE_DIR, "Review_2_Oil_Spill_Final_Updated.pptx")
+        prs.save(alt_path)
+        print(f"[SUCCESS] Primary file is currently open in PowerPoint. Saved updated deck cleanly at: {alt_path}")
 
 
 if __name__ == "__main__":
