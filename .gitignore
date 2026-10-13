@@ -23,6 +23,18 @@ venv/
 ~$*.docx
 ~$*.xlsx
 
+# Local helper scripts & diagram generators
+generate_*.py
+render_*.py
+
+# Auxiliary images & assets (kept locally)
+results/architecture_pipeline_slide5.png
+results/classification_confusion_matrix.png
+results/comparison_barchart.png
+results/preprocessing_slide_graph.png
+results/srm_logo*.png
+results/system_architecture_diagram.png
+
 # OS specific files
 .DS_Store
 Thumbs.db

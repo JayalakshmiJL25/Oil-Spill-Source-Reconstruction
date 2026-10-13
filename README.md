@@ -26,9 +26,7 @@ This project introduces an end-to-end Big Data machine learning and deep learnin
 
 ## 🏗️ System Architecture
 
-The pipeline processes multi-source data through five coordinated layers:
-
-![System Architecture](results/system_architecture_diagram.png)
+The pipeline processes multi-source data through five coordinated layers (see detailed flowchart in [`results/system_architecture_description.md`](results/system_architecture_description.md)):
 
 1. **Layer 1: Multi-Source Satellite & Meteorological Ingestion**: Ingests multi-temporal Sentinel-1 SAR slick delineations, hourly ERA5 wind vectors ($u_{10}, v_{10}$ at 0.25°), CMEMS ocean currents ($u, v$ at 0.083°), and audited Sanchi AIS tanker drift records.
 2. **Layer 2: Big Data Preprocessing & Segmentation**: Distributed PyArrow engine handles 60.5M records across 5 whole-spill folds, performs domain-specific physical parameter imputation (Rank 999.0, neutral drift mismatches), and executes dynamic 80th-percentile spatial thresholding.
@@ -66,10 +64,10 @@ All models were evaluated on an **unseen whole-spill test partition (`id_fold=4`
 ## 📈 Visual Analytics Dashboards
 
 ### Preprocessing Feature & Class Balance Analytics
-![Preprocessing Plots](results/preprocessing_slide_graph.png)
+![Preprocessing Plots](results/preprocessing_plots.png)
 
 ### Comparative Benchmark Charts
-![Model Comparison Charts](results/comparison_barchart.png)
+![Model Comparison Charts](results/model_comparison_charts.png)
 
 ---
 
