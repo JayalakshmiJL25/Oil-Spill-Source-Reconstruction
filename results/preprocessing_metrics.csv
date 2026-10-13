@@ -1,0 +1,11 @@
+Metric / Parameter,Value,Status / Unit
+Total Processed Records (Fold 0),"659,295",Records
+Ground Truth Source Positives (y=1),"91,561",13.89%
+Candidate Negatives (y=0),"567,734",86.11%
+Missing Grid Parameters Handled,"518,197",100% Resolved
+Missing f_rank_in_hour Imputed,"120,466",Rank 999.0 (Unranked)
+Missing k=1 Drift Mismatch Imputed,"132,577",0.0 km / 1.0 Ratio
+Engineered Physical Features Added,5 Features,"Windage, Alignment, Consensus"
+Adaptive Segmentation Threshold,0.1448,80th Percentile Dynamic Score
+Segmented High-Potential Cells,"131,859",Candidate Region
+End-to-End Preprocessing Runtime,1.48 s,High-Throughput PyArrow

@@ -1,0 +1,26 @@
+# Git Ignore for Oil Spill Project Repository
+# Ignore large binary dataset archives (>100MB exceeds GitHub push limit)
+*.zip
+Oil Spill M2 Dataset*
+Sanchi_M2_Training_v4_full*
+extracted_v4_small/
+extracted_handoff_v1/
+extracted_docs_addon/
+
+# Python & Environment caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+~$*.pptx
+~$*.docx
+~$*.xlsx
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
