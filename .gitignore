@@ -16,6 +16,9 @@ __pycache__/
 env/
 venv/
 .ipynb_checkpoints/
+# Presentation files (kept locally, excluded from GitHub repo)
+*.pptx
+*.ppt
 ~$*.pptx
 ~$*.docx
 ~$*.xlsx
