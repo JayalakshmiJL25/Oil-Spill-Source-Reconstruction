@@ -78,8 +78,8 @@ All models were evaluated on an **unseen whole-spill test partition (`id_fold=4`
 ### 1. Environment Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/Jayalakshmi-TR/AI-Oil-Spill-Source-Reconstruction.git
-cd AI-Oil-Spill-Source-Reconstruction
+git clone https://github.com/JayalakshmiJL25/Oil-Spill-Source-Reconstruction.git
+cd Oil-Spill-Source-Reconstruction
 pip install -r requirements.txt
 ```
 

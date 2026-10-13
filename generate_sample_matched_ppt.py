@@ -756,7 +756,7 @@ def build_deck():
         pb.space_before = Pt(6)
 
     p_url = tf_gh.add_paragraph()
-    p_url.text = "\nGitHub Implementation URL:               https://github.com/Jayalakshmi-TR/Oil-Spill-Source-Reconstruction.git"
+    p_url.text = "\nGitHub Implementation URL:               https://github.com/JayalakshmiJL25/Oil-Spill-Source-Reconstruction.git"
     p_url.font.name = "Arial"
     p_url.font.size = Pt(12)
     p_url.font.bold = True
